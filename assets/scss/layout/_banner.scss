@@ -1,0 +1,95 @@
+.banner{
+   background: url(../Images/Background/main-banner.png) no-repeat center center/cover;
+   padding-top: 150px;
+
+   &.product-banner{
+      background: url(../Images/Background/Product-bg-banner.png) no-repeat bottom center/cover;
+
+      @media (max-width: 767px) {
+         padding-top: 50px;      
+      }
+   }
+
+   @media (max-width: 767px) {
+      padding-top: 120px;      
+   }
+
+   .banner-inside{
+
+      h1{
+         font-size: 65px;
+         font-weight: 700;
+         color: #fff;
+
+         @media(min-width: 1800px) {
+            white-space: pre-line;            
+         }
+
+         @media (max-width: 1400px) {
+            font-size: 50px;  
+         }
+
+         @media (max-width: 1199px) {
+            font-size: 40px;  
+         }
+
+         @media (max-width: 767px) {
+            font-size: 30px;  
+         }
+      }
+
+      p{
+         color: #fff;
+         font-size: 24px;
+         font-weight: 400;
+
+         @media(min-width: 1800px){
+            white-space: pre-line;
+         }
+
+         @media (max-width: 1400px) {
+            font-size: 18px;  
+         }
+
+         @media (max-width: 1199px) {
+            font-size: 16px;  
+         }
+
+         @media (max-width: 767px) {
+            font-size: 15px;  
+         }
+
+      }
+
+      &.product{
+         padding: 100px 0;
+
+      }
+      .breadcrumb-item{
+         font-weight: 400;
+         font-size: 24px;
+         color: #fff;
+
+         @media(max-width: 767px) {
+            font-size: 18px;
+         }
+
+
+         a{
+            color: #fff;
+         }
+
+         &:before{
+            color: #fff;
+         }
+
+         &.active{
+            font-size: 30px;
+            font-weight: 700;
+            @media(max-width: 767px) {
+               font-size: 22px;
+            }
+         }
+      }
+   }
+}
